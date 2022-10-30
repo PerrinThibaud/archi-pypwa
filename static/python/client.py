@@ -40,8 +40,8 @@ def set_theme():
     div_name_architect.innerText = forecast.name
     div_title.innerText = forecast.title
     div_quote_architect.innerText = f"\"{forecast.quote}\""
-    div_architect.children[0].setAttribute('src', '/static/images/architects/{}.webp'.format(forecast.images))
-    div_architecture.children[1].setAttribute('src', '/static/images/architecture/{}.webp'.format(forecast.images))
+    div_architect.children[0].setAttribute('src', './static/images/architects/{}.webp'.format(forecast.images))
+    div_architecture.children[1].setAttribute('src', './static/images/architecture/{}.webp'.format(forecast.images))
 
     remove_class(div_content, 'hidden')
     remove_class(div_architect, 'hidden')
