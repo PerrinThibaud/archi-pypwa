@@ -25,6 +25,7 @@ def set_theme():
     div_quote_architect = document.getElementById('quote_architect')
     div_architect = document.getElementById('architect')
     div_architecture = document.getElementById('architecture')
+    div_title = document.getElementById('title_architect')
 
     add_class(div_content, 'hidden')
     add_class(div_architect, 'hidden')
@@ -37,9 +38,10 @@ def set_theme():
     body.style.setProperty("--main-color", forecast.main)
     body.style.setProperty("--secondary-color", forecast.secondary)
     div_name_architect.innerText = forecast.name
+    div_title.innerText = forecast.title
     div_quote_architect.innerText = f"\"{forecast.quote}\""
-    div_architect.children[0].setAttribute('src', '../static/images/architects/{}.webp'.format(forecast.images))
-    div_architecture.children[0].setAttribute('src', '../static/images/architecture/{}.webp'.format(forecast.images))
+    div_architect.children[0].setAttribute('src', '/static/images/architects/{}.webp'.format(forecast.images))
+    div_architecture.children[1].setAttribute('src', '/static/images/architecture/{}.webp'.format(forecast.images))
 
     remove_class(div_content, 'hidden')
     remove_class(div_architect, 'hidden')

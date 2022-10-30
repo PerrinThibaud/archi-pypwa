@@ -34,8 +34,8 @@ def get_random_subject() -> dict:
                 of making sure that our cities and buildings fit with the way we want to live our lives.",
             'title': 'Kistefos Museum Norway',
             'images': 'bi',
-            'main': '#97B5D9',
-            'secondary': '#01293D',
+            'main': '#01293D',
+            'secondary': '#97B5D9',
         },
         {
             'name': 'Jean Nouvel',
