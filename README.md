@@ -6,7 +6,7 @@ allows us to create Python-based web applications that install like regular appl
 
 ![](readme-resources/screenshot.png)
 
-To run the app, just start it as a Flask application (keep the app running for the web weather API).
+To run the app, just start it as a Flask application (keep the app running for the web API).
 
 ```bash
 
