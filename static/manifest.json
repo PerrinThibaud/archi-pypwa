@@ -1,7 +1,7 @@
 {
-  "name": "PyPWA Weather",
-  "short_name": "PyPWA Weather",
-  "start_url": "/",
+  "name": "PyPWA Quotes",
+  "short_name": "PyPWA Quotes",
+  "start_url": "/archi-pypwa/",
   "display": "standalone",
   "background_color": "#69caf8",
   "theme_color": "#444444",
