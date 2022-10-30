@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+
+    <link rel="stylesheet" href="./static/pyscript/pyscript.css"/>
+    <link rel="stylesheet" href="./static/css/fonts.css"/>
+    <link rel="stylesheet" href="./static/css/stylesheet.css"/>
+    <link rel="stylesheet" href="./static/css/site.css"/>
+    <title>PyPWA Weather</title>
+
+    <link rel="manifest" href="./static/manifest.json">
+
+    <script defer src="./static/pyscript/pyscript.js"></script>
+    <py-config type="json" src="./static/python/pyconfig.json"></py-config>
+    <py-env>
+        - paths:
+            - ./static/python/client.py
+            - ./static/python/subject_api.py
+    </py-env>
+</head>
+<body id="body">
+    <main>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/PerrinThibaud" target="_blank">
+                    <svg viewBox="0 0 24 24">
+                        <use href="./static/images/socials/github.svg#icon-1"></use>
+                    </svg>
+                </a></li>
+                <li><a href="https://www.behance.net/ThibaudPerrin" target="_blank">
+                    <svg viewBox="0 0 24 24" alt="behance Thibaud Perrin" title="behance Thibaud Perrin">
+                        <use href="./static/images/socials/behance.svg#icon-1"></use>
+                    </svg>
+                </a></li>
+                <li><a href="https://dribbble.com/ThibaudP" target="_blank">
+                    <svg viewBox="0 0 24 24" alt="dribbble Thibaud Perrin" title="dribbble Thibaud Perrin">
+                        <use href="./static/images/socials/dribbble.svg#icon-1"></use>
+                    </svg>
+                </a></li>
+                <li><a href="https://www.linkedin.com/in/thibaud-perrin/" target="_blank">
+                    <svg viewBox="0 0 24 24" alt="linkedin Thibaud Perrin" title="linkedin Thibaud Perrin">
+                        <use href="./static/images/socials/linkedin.svg#icon-1"></use>
+                    </svg>
+                </a></li>
+            </ul>
+        </nav>
+        <div id="content" class="hidden">
+            <div id="text-container">
+                <div id="info">
+                    <h1 id="name_architect">Frank Gehry</h1>
+                    <h3 id="quote_architect">Architecture should speak of its time and place, but yearn for timelessness.</h3>
+                </div>
+                <button id="refresh" type="button">Refresh</button>
+            </div>
+            <div id="architecture">
+                <img src="#" alt="github Thibaud Perrin">
+            </div>
+        </div>
+        <div id="architect" class="hidden">
+            <img src="#" alt="github Thibaud Perrin">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+        <p class="subtitle1">
+            A pyscript demo app by <a href="https://github.com/PerrinThibaud" target="_blank">@PerrinThibaud</a>, copyright 2022.
+        </p>
+        </div>
+    </footer>
+    <py-script src="./static/python/client.py"></py-script>
+    <!--<script src="./static/js/pwa-scaffold.js"></script> -->
+</body>
+</html>
