@@ -1,0 +1,198 @@
+py-config,
+py-env {
+    display: none;
+}
+
+#body {
+    --main-color: #4b4b4b;
+    --secondary-color: #d0d0d0;
+
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 6rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 3rem 3rem;
+}
+
+nav svg use {
+    fill: var(--secondary-color);
+    transform: translate(0, 50%);
+    transition: transform 0.15s ease-in-out;
+}
+
+nav svg:hover use {
+    transform: translate(0, 0);
+}
+
+nav>ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+nav>ul>li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+nav>ul>li>a>img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 3rem 0 9rem;
+    z-index: 1;
+}
+
+#text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 36rem;
+}
+
+#text-container button {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+
+    transition: transform 0.15s ease-in-out;
+}
+
+#text-container button:hover {
+    transform: scale(1.01);
+}
+
+#text-container button:active {
+    transform: scale(0.99);
+}
+
+#info {
+    color: var(--secondary-color);
+}
+
+#architecture {
+    position: relative;
+    display: block;
+    width: 20rem;
+    height: 32rem;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+}
+
+#architecture img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    z-index: 1;
+}
+
+#architecture::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    border: 0.063rem solid var(--secondary-color);
+    border-bottom: 0.063rem solid transparent;
+    transform-origin: calc(100% + 0.125rem) 100%;
+    transform: scale(1.15, 1.05);
+    top: 0;
+    left: 0;
+}
+
+#architect {
+    position: absolute;
+    bottom: -6rem;
+    left: 0;
+    height: 100%;
+    aspect-ratio: 0.5625;
+}
+
+#architect>img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    mix-blend-mode: overlay;
+    object-position: 60%;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+}
+
+footer>.footer-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 6rem;
+}
+
+/* .hidden {
+    display: none;
+} */
